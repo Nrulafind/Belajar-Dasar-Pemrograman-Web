@@ -1,5 +1,15 @@
 /* styles/style.css */
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -36,6 +46,19 @@ main {
   flex-wrap: wrap;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+.box {
+  box-shadow: 4px 4px 8px burlywood;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
 article,
 aside {
   flex: 1 1 50%;
@@ -44,6 +67,7 @@ aside {
 
 aside {
   background-color: #f0f0f0;
+  flex: 50%;
 }
 #kuliner {
   flex-direction: column-reverse;
@@ -100,4 +124,13 @@ footer {
 
 .next {
   right: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  article,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
 }
